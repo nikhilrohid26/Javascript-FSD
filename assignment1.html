@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Examples</title>
+</head>
+<body>
+    <h1>Welcome to JavaScript Exercises</h1>
+
+
+    <button onclick="addTwoNumbers()">Add Two Numbers</button>
+
+    <button onclick="checkEvenOrOdd()">Check Even or Odd</button>
+
+    <button onclick="calculateSquare()">Calculate Square</button>
+    <button onclick="reverseString()">Reverse a String</button>
+   <button onclick="getCurrentDateTime()">Get Current Date and Time</button>
+
+    <script>
+        function addTwoNumbers() {
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+            alert("The sum is: " + (num1 + num2));
+        }
+
+        function checkEvenOrOdd() {
+            let number = parseInt(prompt("Enter a number:"));
+            if (number % 2 === 0) {
+                alert("The number is even.");
+            } else {
+                alert("The number is odd.");
+            }
+        }
+
+        function calculateSquare() {
+            let number = parseFloat(prompt("Enter a number:"));
+            alert("The square is: " + (number * number));
+        }
+
+        function reverseString() {
+            let str = prompt("Enter a string:");
+            alert("Reversed string: " + str.split('').reverse().join(''));
+        }
+
+        function getCurrentDateTime() {
+            let currentDate = new Date();
+            alert("Current date and time: " + currentDate);
+        }
+    </script>
+</body>
+</html>
